@@ -1,0 +1,23 @@
+.container{
+    width: 100%;
+    aspect-ratio: 1;
+    perspective: 1000px;
+    cursor: pointer;
+}.ocult{
+    transform: rotateY(180deg);
+}.fliper{
+    transform-style: preserve-3d;
+    transition: .8s;
+    position: relative;
+}img{
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid rgb(94, 255, 0)
+}.front, .back{
+    position: absolute;
+    backface-visibility: hidden;
+}.back{
+    transform: rotateY(180deg);
+}

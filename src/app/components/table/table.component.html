@@ -1,0 +1,11 @@
+<p>id:{{virada.id}} index:{{virada.index}} pontos:{{pontos}} action:{{action}} movimentos:{{movimentos}} </p>
+
+<section class="container">
+
+    @for (item of cards; track $index) {
+        <!-- <img src="{{item}}" alt="img{{$index}}"> -->
+        <ds-card [image]="item.image" [ocult]="item.ocult" (click)="compare($index, item.id, item.ocult)"></ds-card>
+    
+    }
+    
+</section>

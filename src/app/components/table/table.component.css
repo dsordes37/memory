@@ -1,0 +1,15 @@
+.container{
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin: auto;
+
+}img{
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+}
